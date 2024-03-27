@@ -1,0 +1,41 @@
+.left_panel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 64px;
+    left: 65px;
+}
+
+.logo{
+   margin-bottom: 90px;
+}
+
+.text{
+    font-family: var(--font3);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.69em;
+
+    text-transform: uppercase;
+    text-align: center;
+    
+    writing-mode: vertical-rl; 
+    text-orientation: mixed; 
+    transform: rotate(180deg);
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.line{
+    width: 0;
+    height: 149px;
+
+    margin: 58px 0 78px 0;
+    
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.social_icons{
+    margin-bottom: 40px;
+}
