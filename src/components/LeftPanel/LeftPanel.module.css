@@ -1,14 +1,14 @@
 .left_panel{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    position: fixed;
-    top: 64px;
-    left: 65px;
-}
 
-.logo{
-   margin-bottom: 90px;
+    position: fixed;
+    left: 65px;
+
+    z-index: 1;
+    height: 100vh;
 }
 
 .text{
@@ -30,12 +30,6 @@
 .line{
     width: 0;
     height: 149px;
-
-    margin: 58px 0 78px 0;
     
     border: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.social_icons{
-    margin-bottom: 40px;
 }

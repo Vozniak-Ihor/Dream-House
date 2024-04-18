@@ -2,4 +2,101 @@
     position: fixed;
     top: 57px;
     right: 87px;
+    z-index: -1;
+
+    cursor: pointer;
+}
+
+.modalOverly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(60px);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.icon_close{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: fixed;
+    top: 59px;
+    right: 84px;
+}
+  
+.modalUserContent{
+    position:relative;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.menu_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 320px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu_list_item{
+    padding: 93px;
+    border-right: 3px solid transparent;
+    border-image: linear-gradient(to bottom, rgba(128, 128, 128, 0), rgba(255, 255, 255, 1), rgba(128, 128, 128, 0)); 
+    border-image-slice: 1;
+}
+
+.menu_list_item:hover{
+    background: rgba(0, 0, 0, 0.15);
+    padding: 650px 93px 650px 93px;
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, rgba(128, 128, 128, 0), rgba(255, 255, 255, 1), rgba(128, 128, 128, 0)); 
+    border-image-slice: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu_list_item:last-child{
+    border: none;
+}
+
+.menu_list_item:last-child:hover{
+    border-right: 3px solid transparent;
+    border-image: linear-gradient(to bottom, rgba(128, 128, 128, 0), rgba(255, 255, 255, 1), rgba(128, 128, 128, 0)); 
+    border-image-slice: 1;
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, rgba(128, 128, 128, 0), rgba(255, 255, 255, 1), rgba(128, 128, 128, 0)); 
+    border-image-slice: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu_list_item_link{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 30px;
+    
+    
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    border-right: 2px solid transparent;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon__arrow{
+    display: none;
+}
+
+.menu_list_item:hover .icon__arrow{
+    display: block;
 }
