@@ -10,13 +10,13 @@ function LeftPanel () {
     return (
         <div className={panel.left_panel}>
 
-            <img src={logo} alt="logo company" className={panel.logo}/>
+            <img src={logo} alt="logo company" />
             <p className={panel.text}>apartment renovation</p>
             <div className={panel.line}></div>
 
-            <img src={facebook} alt="icon facebook" className={panel.social_icons}/>
-            <img src={instagram} alt="icon instagram" className={panel.social_icons}/>
-            <img src={telegram} alt="icon telegram" className={panel.social_icons}/>
+            <img src={facebook} alt="icon facebook" />
+            <img src={instagram} alt="icon instagram" />
+            <img src={telegram} alt="icon telegram" />
             <img src={youtube} alt="icon youtube" />
 
         </div>

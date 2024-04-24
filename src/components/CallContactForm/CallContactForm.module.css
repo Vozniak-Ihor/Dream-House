@@ -1,0 +1,139 @@
+.call_element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    position: fixed;
+    z-index: -1;
+    bottom: 55px;
+    right: 63px;
+
+    cursor: pointer;
+}
+
+.call_text{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-align: right;
+color: var(--gold);
+}
+
+.pulse_call{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.pulse_call::after, .pulse_call::before{
+content: '';
+
+border-radius: 50%;
+border: 2px solid rgba(255, 255, 255, 0.3);
+
+position: absolute;
+top: -10px;
+left: -10px;
+right: -10px;
+bottom: -10px;
+
+opacity: 0;
+
+animation: pulse_call 3s linear infinite;
+}
+
+.pulse_call::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes pulse_call{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+
+/* modal */
+.icon_close{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: fixed;
+    top: 59px;
+    right: 84px;
+}
+
+.form_input{
+    width: 500px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0 0 36px 0;
+}
+
+.form_input:first-child{
+    margin-bottom: 26px;
+}
+
+.form_input::placeholder{
+    color: #fff;
+}
+
+.call_all_form{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.form_button{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+
+    border: transparent;
+    color: var(--gold);
+    background-color: transparent;
+}
+
+.modalOverly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(60px);
+    background: rgba(0, 0, 0, 0.6);
+}
+  
+.modalUserContent{
+    position:relative;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+}

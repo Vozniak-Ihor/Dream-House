@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(240, 129, 129);
 }
 
 code {
@@ -34,4 +35,5 @@ code {
   --font3: "Roboto", sans-serif;
   --font4: "FontAwesome", sans-serif;
   --font5: "Bruno Ace SC", sans-serif;
+  --gold: #FFAC30;
 }
